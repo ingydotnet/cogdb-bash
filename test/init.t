@@ -9,7 +9,7 @@ cog=test/test1-cog
 
 msg="`cogdb init $cog`"
 
-like "$msg" 'Initialized empty Git repository in' \
+like "$msg" 'Initialized new cogdb in' \
   'init gives correct output'
 
 ok "`[ -d $cog/node ]`" \
